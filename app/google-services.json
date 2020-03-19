@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "825696513794",
+    "firebase_url": "https://stream-audio-527dd.firebaseio.com",
+    "project_id": "stream-audio-527dd",
+    "storage_bucket": "stream-audio-527dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825696513794:android:aef838a6ba90058b",
+        "android_client_info": {
+          "package_name": "com.ashish2117.user.streammedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825696513794-sbfh1fh7uulboa77plt5suosimc7r6f5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashish2117.user.streammedia",
+            "certificate_hash": "8a0a71737652edd45d6e6ecdc22355db47a126d8"
+          }
+        },
+        {
+          "client_id": "825696513794-nkit2gmfbbfqck26vjac0kcunjoeh1er.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashish2117.user.streammedia",
+            "certificate_hash": "acdebc37a6cba4c18036fbe2222126b12a9c8286"
+          }
+        },
+        {
+          "client_id": "825696513794-bek4li136n29j129dkhs0luthoqhlmuk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDookGkyx9KlcPU15gJakmCema2Dz-x1Vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825696513794-bek4li136n29j129dkhs0luthoqhlmuk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

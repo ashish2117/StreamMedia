@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ashish2117.user.streammedia.activity.Friends"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/dp"
+            android:id="@+id/profileImage">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:gravity="center_vertical">
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layoutDirection="ltr">
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_more_vert_black_24dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/optionsButton"/>
+         </LinearLayout>
+            <android.support.v7.widget.SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SearchTheme"
+            android:id="@+id/searchView">
+        </android.support.v7.widget.SearchView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:reverseLayout="true"
+        android:background="@drawable/top_round"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

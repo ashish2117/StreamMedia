@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="25dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/shadow"
+        android:elevation="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_headset_black_24dp"
+            android:id="@+id/album_art"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:paddingLeft="25dp"
+            android:text="Play"
+            android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+            android:background="@drawable/round_corners_primary"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Stop"
+            android:background="@drawable/round_corners_primary"
+            android:textAlignment="viewStart"
+            android:drawableLeft="@drawable/ic_stop_black_24dp"
+            android:paddingLeft="25dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+    <TextView
+        android:id="@+id/curtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <ProgressBar
+        android:layout_marginLeft="10dp"
+        android:id="@+id/progressbar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+     <TextView
+         android:layout_marginLeft="10dp"
+            android:id="@+id/maxtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

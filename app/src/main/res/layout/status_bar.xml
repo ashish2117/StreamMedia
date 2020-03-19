@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/notificationsmqll" android:layout_width="fill_parent" android:layout_height="64dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/status_bar_album_art"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/music"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="?android:listDivider"
+        android:layout_toRightOf="@id/status_bar_album_art"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:showDividers="middle"
+        android:dividerPadding="12.0dip"
+        android:layout_marginTop="24dp">
+
+        <ImageButton
+            android:id="@+id/status_bar_prev"
+            android:background="?android:selectableItemBackground"
+            android:padding="10.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/play_controls_notification"
+            android:src="@drawable/ic_skip_previous_orange_35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1.0" />
+        <ImageButton
+            android:id="@+id/status_bar_playy"
+            android:background="?android:selectableItemBackground"
+            android:padding="10.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/play_controls_notification"
+            android:src="@drawable/pause_orange"
+            android:scaleType="fitCenter"
+            android:layout_weight="1.0" />
+        <ImageButton android:id="@+id/status_bar_next"
+            android:background="?android:selectableItemBackground"
+            android:padding="10.0dip"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/play_controls_notification"
+            android:src="@drawable/ic_skip_next_black_35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView
+        android:background="?android:dividerHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="1.0px"
+        android:layout_toRightOf="@id/status_bar_album_art"
+        android:layout_above="@+id/buttons"
+        android:layout_alignParentRight="true" />
+    <ImageButton
+        android:id="@+id/status_bar_small"
+        android:background="?android:selectableItemBackground"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_close_orange_24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:id="@+id/textarea"
+        android:paddingLeft="@dimen/notification_padding"
+        android:paddingTop="4dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/status_bar_small"
+        android:layout_toRightOf="@id/status_bar_album_art"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:ellipsize="marquee"
+            android:layout_gravity="left"
+            android:id="@+id/status_bar_track_name"
+            android:focusable="true"
+            android:fadingEdge="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="#f7750b"
+            android:text="Track Name Large"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

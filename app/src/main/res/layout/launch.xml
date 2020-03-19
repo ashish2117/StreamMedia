@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/urltext"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="URL..."
+        android:background="@drawable/round_corners_primary"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Details"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_corners_primary"
+        android:textColor="#ffffff"
+        android:padding="10dp"/>
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/mtitle"
+        android:hint="Title"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/malbum"
+        android:hint="Album"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/martist"
+        android:hint="Artist"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/sendreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Request"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corners_primary"
+        android:textColor="#ffffff"
+        android:padding="10dp"/>
+
+
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

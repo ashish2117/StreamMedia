@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ashish2117.user.streammedia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.FriendProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:theme="@style/CustomThemeProfile"></activity>
+        <activity
+            android:name=".activity.Launcher"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Chat"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTheme"></activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InboxActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="Recieved_Songs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FriendRequestsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="RequestRecieved" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Friends"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ServicePlayer"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".service.PlayerService" />
+        <service android:name=".service.NotificationService" />
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".broadcastrec.ConnectionReciever" />
+
+        <activity
+            android:name=".activity.PlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SentboxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SentOrRecievedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FriendRequestSentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.GroupPlayerActivity" />
+
+        <receiver android:name=".broadcastrec.StartNotificationReciever">
+            <intent-filter>
+                <action android:name="YouWillNeverKillMe" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastrec.FirebaseMessagingStarterBroadcastRec">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="restartFirebaseMessage" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.RemotePlayerService" />
+    </application>
+
+</manifest>
